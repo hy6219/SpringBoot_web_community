@@ -1,0 +1,21 @@
+server:
+  port: 8089
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql:
+          true
+    defer-datasource-initialization: true
+  datasource:
+    url:
+      jdbc:h2:mem:7cf6e91d-d5af-40f5-abbe-06a8f9e2f5ae
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  sql:
+    init:
+      enabled: true
